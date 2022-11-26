@@ -250,6 +250,7 @@ export class UserService {
     await foundUser.updateOne({
       $push: { blockedUsers: userToBlock.id},
     });
+    console.log('salam')
 
   }
 }
